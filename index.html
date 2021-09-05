@@ -7,77 +7,217 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="">
-    <title></title>
+    <link rel="icon" href="/resources/assets/img/favicon.png">
+    <title>Ing Humberto</title>
     <link rel="stylesheet" href="./resources/css/tailwind.css">
+    <link rel="stylesheet" href="/src/animate.css">
+    <script defer type="module" src="/resources/js/index.js"></script>
+    <script defer src="/resources/js/typed.min.js"></script>
+    <script defer src="/resources/js/rellax.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+        integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+        integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"
+        integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"
+        integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"
+        integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"
+        integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"
+        integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body>
+<body id="body" class="overflow-x-hidden">
+    <div id="cover-menu" class="cover-menuu" aria-hidden="true"></div>
     <header>
-        <div class="h-100vh w-full overflow-hidden flex justify-center absolute bg-center bg-cover bg-portada">
-            <div class="bg-black bg-opacity-30 w-screen h-screen"></div>
-            <div class="opacity-60 w-35vh h-55vh flex bottom10 absolute z-10">
-                <div class="h-65vh w-30vh -left-1/2 mx-auto bg-black -bottom-1/4 transform rotate-25 absolute"></div>
-                <div class="h-65vh w-30vh -right-1/2 mx-auto bg-black -bottom-1/4 transform -rotate-25 absolute"></div>
-                <div class="h-65vh w-25vh left-15 mx-auto bg-black -bottom-1/4 transform absolute"></div>
-                <nav class="min-h-full w-2/3 mx-auto relative mt-6">
-                    <div class="h-8 w-20 mx-auto top8 mb-8 flex justify-center relative group overflow-hidden">
-                        <a href=""
-                            class="flex hover:text-red-50  text-red-300 duration-300 font-bold items-center absolute justify-center rounded-full z-10 w-full h-full group">
-                            About me
-                        </a>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:-translate-x-0">
-                        </div>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform -rotate-20 duration-300 ease-linear translate-x-full group-hover:translate-x-0 ml-1/2">
-                        </div>
-                    </div>
-                    <div class="h-8 w-16 mx-auto top8 mb-8 flex justify-center relative group overflow-hidden">
-                        <a href=""
-                            class="flex hover:text-red-50  text-red-300 duration-300 font-bold items-center absolute justify-center rounded-full z-10 w-full h-full group">
-                            Projects
-                        </a>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:-translate-x-0">
-                        </div>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform -rotate-20 duration-300 ease-linear translate-x-full group-hover:translate-x-0 ml-1/2">
+        <div id="start" class="h-screen w-screen overflow-hidden bg-center bg-cover bg-portada">
+            <div class="gradient duration-500 flex flex-col-reverse md:flex-col items-center w-screen h-screen">
+                <!--Text intro portfolio-->
+                <div class="font-PTsans h-1/2 md:my-auto animate__animated animate__zoomInDown rellax"
+                    data-rellax-speed="-3">
+                    <h1 class="text-white mt-20 text-2xl reflect lg:text-7xl md:text-6xl font-bold">Hi<span
+                            class="text-primary">!</span> i'm a <span id="typedJS" class="wavy"></span>
+                    </h1>
+                </div>
+                <!--Menu bar-->
+                <div class="animate__animated animate__flipInX animate__slow" id="div-menu" aria-label="menu">
+                    <div id="logo-btn" class="w-screen h-full flex flex-row self-start justify-around md:justify-between items-center">
+                        <a href="#start" class="logo"><img src="/resources/assets/img/logo_transparent.png" alt=""
+                                class="h-full w-20 ml-14 lg:ml-64 hover:hue-rotate-180"></a>
+                        <div class="menu-btn z-50">
+                            <div class="menu-btn__burger"></div>
                         </div>
                     </div>
-                    <div class="h-8 w-24 mx-auto top8 mb-8 flex justify-center relative group overflow-hidden">
-                        <a href=""
-                            class="flex hover:text-red-50  text-red-300 duration-300 font-bold items-center absolute justify-center rounded-full z-10 w-full h-full group">
-                            Curriculum
-                        </a>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:-translate-x-0">
-                        </div>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform -rotate-20 duration-300 ease-linear translate-x-full group-hover:translate-x-0 ml-1/2">
-                        </div>
-                    </div>
-                    <div class="h-8 w-24 mx-auto top8 mb-8 flex justify-center relative group overflow-hidden">
-                        <a href=""
-                            class="flex hover:text-red-50  text-red-300 duration-300 font-bold items-center absolute justify-center rounded-full z-10 w-full h-full group">
-                            Contact me
-                        </a>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:-translate-x-0">
-                        </div>
-                        <div
-                            class="h-1 w-1/2 bg-red-900 group-hover:translate-y-4 transform -rotate-20 duration-300 ease-linear translate-x-full group-hover:translate-x-0 ml-1/2">
-                        </div>
-                    </div>
-                </nav>
+                    <nav id="navbar" class="fixed z-30">
+                        <ul id="ulli" class="li-v hidden">
+                            <img id="img-logo" src="/resources/assets/img/logo_transparent.png" alt=""
+                                class="logo-open hidden">
+                            <div id="a-div1" class="group">
+                                <li>
+                                    <a href="#" class="li-a group">
+                                        About me
+                                    </a>
+                                </li>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:translate-y-4 group-hover:-translate-x-0">
+                                </div>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 transform -rotate-20 duration-300 ease-linear translate-x-full ml-1/2 group-hover:translate-y-4 group-hover:translate-x-0 ">
+                                </div>
+                            </div>
+                            <div id="a-div3" class="group">
+                                <li>
+                                    <a href="#" class="li-a group">
+                                        Curriculum
+                                    </a>
+                                </li>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 group-hover:translate-y-4 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:-translate-x-0">
+                                </div>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 group-hover:translate-y-4 transform -rotate-20 duration-300 ease-linear translate-x-full group-hover:translate-x-0 ml-1/2">
+                                </div>
+                            </div>
+                            <div id="a-div2" class="group">
+                                <li>
+                                    <a href="#" class="li-a group">
+                                        Projects
+                                    </a>
+                                </li>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 group-hover:translate-y-4 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:-translate-x-0">
+                                </div>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 group-hover:translate-y-4 transform -rotate-20 duration-300 ease-linear translate-x-full group-hover:translate-x-0 ml-1/2">
+                                </div>
+                            </div>
+                            <div id="a-div4" class="group">
+                                <li>
+                                    <a href="#" class="li-a group">
+                                        Contact me
+                                    </a>
+                                </li>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 group-hover:translate-y-4 transform rotate-20 duration-300 ease-linear -translate-x-full group-hover:-translate-x-0">
+                                </div>
+                                <div
+                                    class="h-1 w-1/2 bg-primary opacity-60 group-hover:translate-y-4 transform -rotate-20 duration-300 ease-linear translate-x-full group-hover:translate-x-0 ml-1/2">
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+                <!--Menu bar</> -->
             </div>
         </div>
     </header>
-    <main>
+    <main class="bg-black relative w-screen overflow-hidden">
+        <!--Aboout me-->
+        <section id="art-about" class="relative h-screen w-screen overflow-visible z-30">
+            <!--cuando esté en scroll in, cambiar posicion a fixed y añadir split errect-->
+            <article class="aboutme">
+                <div
+                    class="about h-screen w-32 opacity-10 text-9xl flex flex-wrap justify-center absolute font-black text-primary">
+                    <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span></div>
+                <div class="circle1 animate__animated animate__fadeInDown animate__slow"><img class="w-48 rounded-full "
+                        src="/resources/assets/img/20201229221032_IMG_0245.png" alt=""></div>
+                <p
+                    class="w-4/6 font-PTsans text-xl font-medium z-10 tracking-wider text-justify text-primary-light self-center justify-center sm:w-3/5 sm:mr-10 lg:mr-20 animate__animated animate__slideInUp">
+                    My name is Humberto Agudelo, from Colombia, a lover to make web pages/platforms of all types that
+                    owns skills of UX/UI Design, FrontEnd, BackEnd, Teamwork, Soft skills, and knowledgement in
+                    tecnologies
+                    as HTML, CSS (with Bootstrap, Preprosessor PostCSS with TailwindCSS), JavaScript (With React,
+                    Angular,
+                    NodeJs (With Loopback)).</p>
+
+            </article>
+            <article class="aboutme2">
+                <div
+                    class="about h-screen w-32 opacity-10 text-9xl flex flex-wrap justify-center absolute font-black text-primary">
+                    <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span></div>
+                <div class="circle1 animate__animated animate__fadeInDown animate__slow"><img class="w-48 rounded-full "
+                        src="/resources/assets/img/20201229221032_IMG_0245.png" alt=""></div>
+                <p
+                    class="w-4/6 font-PTsans text-xl font-medium z-10 tracking-wider text-justify text-primary-light self-center justify-center sm:w-3/5 sm:mr-10 lg:mr-20 animate__animated animate__slideInUp">
+                    My name is Humberto Agudelo, from Colombia, a lover to make web pages/platforms of all types that
+                    owns skills of UX/UI Design, FrontEnd, BackEnd, Teamwork, Soft skills, and knowledgement in
+                    tecnologies
+                    as HTML, CSS (with Bootstrap, Preprosessor PostCSS with TailwindCSS), JavaScript (With React,
+                    Angular,
+                    NodeJs (With Loopback)).</p>
+
+            </article>
+        </section>
+        <!--Curriculum-->
+        <article class="curriculum bg-gradient-to-b from-black to-secondary-dark h-[50em] w-screen">
+            <section class=" w-screen flex flex-wrap content-evenly justify-center overflow-hidden">
+                <div
+                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl rounded-tr-lg">
+                    <div class="absolute bg-primary-light w-[6px] h-full">
+                        <div
+                            class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['07/07/2021'] before:w-28">
+                            <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
+                        </div>
+                    </div>
+                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">Title of timeline</h2>
+                    <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
+                        Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Vitae labore porro ipsam quas vel pariatur commodi autem, hic
+                        reiciendis eius ex fugit voluptas repudiandae enim quasi nobis quae aliquam ea!
+                    </p>
+                </div>
+                <div
+                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl">
+                    <div class="absolute bg-primary-light w-[6px] h-full">
+                        <div
+                            class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['07/07/2021'] before:w-28">
+                            <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
+                        </div>
+                    </div>
+                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">Title of timeline</h2>
+                    <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
+                        Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Vitae labore porro ipsam quas vel pariatur commodi autem, hic
+                        reiciendis eius ex fugit voluptas repudiandae enim quasi nobis quae aliquam ea!
+                    </p>
+                </div>
+                <div
+                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl rounded-br-lg">
+                    <div class="absolute bg-primary-light w-[6px] h-full">
+                        <div
+                            class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['07/07/2021'] before:w-28">
+                            <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
+                        </div>
+                    </div>
+                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">Title of timeline</h2>
+                    <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
+                        Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Vitae labore porro ipsam quas vel pariatur commodi autem, hic
+                        reiciendis eius ex fugit voluptas repudiandae enim quasi nobis quae aliquam ea!
+                    </p>
+                </div>
+
+            </section>
+        </article>
+
     </main>
     <footer>
 
     </footer>
+
 </body>
 
 </html>

@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif']
+      serif: ['Merriweather', 'serif'],
+      PTsans: ['PT sans', 'sans-serif']
     },
     rotate: {
       '25': '27deg',
@@ -20,11 +21,11 @@ module.exports = {
     },
     extend: { // https://tailwindcss.com/docs/customizing-colors#color-palette-reference
       backgroundImage: theme => ({
-        'portada':'url(/resources/assets/20201229221032_IMG_0245.JPG)'
+        'portada':'url(/resources/assets/video/ezgif.com-gif-maker.gif)',
       }),
       colors: {
         teal: colors.teal, 
-        'light-blue': colors.lightBlue,
+        'sky': colors.sky,
         'orange': colors.orange,
         gray: {
           light: 'var(--gray-light)',

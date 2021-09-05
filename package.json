@@ -1,24 +1,26 @@
 {
-  "name": "tailwind01",
+  "name": "ing-humberto-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Humberto's portfolio, about me, my skills, my contact",
   "main": "index.html",
   "scripts": {
     "dev": "NODE_ENV=development postcss ./src/tailwind.css -o ./resources/css/tailwind.css -w",
     "build": "NODE_ENV=production postcss ./src/tailwind.css -o ./resources/css/tailwind.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Humberto Agudelo",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.0",
+    "tailwindcss": "^2.2.7",
     "tailwindcss-pseudo-selectors": "^2.0.0",
     "tailwindcss-textshadow": "^2.1.3"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "rellax": "^1.12.1",
     "win-node-env": "^0.4.0"
   }
 }
