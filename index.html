@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Humberto Agudelo">
+    <meta name="description" content="Portafolio del desarrollador web Humberto Agudelo en el que describe quién es,
+    a qué se dedica, qué tecnologías usa y su experiencia laboral.">
     <link rel="icon" href="/resources/assets/img/favicon.png">
     <title>Ing Humberto</title>
     <link rel="stylesheet" href="./resources/css/tailwind.css">
     <link rel="stylesheet" href="/src/animate.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/splide.min.css">
     <script defer type="module" src="/resources/js/index.js"></script>
     <script defer src="/resources/js/typed.min.js"></script>
     <script defer src="/resources/js/rellax.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/splide.min.js"></script>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
         integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -53,8 +58,9 @@
                     </h1>
                 </div>
                 <!--Menu bar-->
-                <div class="animate__animated animate__flipInX animate__slow" id="div-menu" aria-label="menu">
-                    <div id="logo-btn" class="w-screen h-full flex flex-row self-start justify-around md:justify-between items-center">
+                <div class="animate__animated animate__flipInX animate__slow menu" id="div-menu" aria-label="menu">
+                    <div id="logo-btn"
+                        class="w-screen h-full hidden flex-row self-start justify-around md:justify-between items-center">
                         <a href="#start" class="logo"><img src="/resources/assets/img/logo_transparent.png" alt=""
                                 class="h-full w-20 ml-14 lg:ml-64 hover:hue-rotate-180"></a>
                         <div class="menu-btn z-50">
@@ -67,7 +73,7 @@
                                 class="logo-open hidden">
                             <div id="a-div1" class="group">
                                 <li>
-                                    <a href="#" class="li-a group">
+                                    <a href="#art-about" class="li-a group">
                                         About me
                                     </a>
                                 </li>
@@ -80,7 +86,7 @@
                             </div>
                             <div id="a-div3" class="group">
                                 <li>
-                                    <a href="#" class="li-a group">
+                                    <a href="#curriculum" class="li-a group">
                                         Curriculum
                                     </a>
                                 </li>
@@ -93,7 +99,7 @@
                             </div>
                             <div id="a-div2" class="group">
                                 <li>
-                                    <a href="#" class="li-a group">
+                                    <a href="#projects" class="li-a group">
                                         Projects
                                     </a>
                                 </li>
@@ -131,83 +137,182 @@
             <article class="aboutme">
                 <div
                     class="about h-screen w-32 opacity-10 text-9xl flex flex-wrap justify-center absolute font-black text-primary">
-                    <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span></div>
+                    <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                </div>
                 <div class="circle1 animate__animated animate__fadeInDown animate__slow"><img class="w-48 rounded-full "
                         src="/resources/assets/img/20201229221032_IMG_0245.png" alt=""></div>
                 <p
                     class="w-4/6 font-PTsans text-xl font-medium z-10 tracking-wider text-justify text-primary-light self-center justify-center sm:w-3/5 sm:mr-10 lg:mr-20 animate__animated animate__slideInUp">
                     My name is Humberto Agudelo, from Colombia, a lover to make web pages/platforms of all types that
                     owns skills of UX/UI Design, FrontEnd, BackEnd, Teamwork, Soft skills, and knowledgement in
-                    tecnologies
-                    as HTML, CSS (with Bootstrap, Preprosessor PostCSS with TailwindCSS), JavaScript (With React,
-                    Angular,
-                    NodeJs (With Loopback)).</p>
+                    tecnologies as HTML, CSS (with Bootstrap, Preprosessor PostCSS with TailwindCSS), JavaScript
+                    (Angular, NodeJs (With Loopback)).</p>
 
             </article>
             <article class="aboutme2">
                 <div
                     class="about h-screen w-32 opacity-10 text-9xl flex flex-wrap justify-center absolute font-black text-primary">
-                    <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span></div>
+                    <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                </div>
                 <div class="circle1 animate__animated animate__fadeInDown animate__slow"><img class="w-48 rounded-full "
                         src="/resources/assets/img/20201229221032_IMG_0245.png" alt=""></div>
                 <p
                     class="w-4/6 font-PTsans text-xl font-medium z-10 tracking-wider text-justify text-primary-light self-center justify-center sm:w-3/5 sm:mr-10 lg:mr-20 animate__animated animate__slideInUp">
                     My name is Humberto Agudelo, from Colombia, a lover to make web pages/platforms of all types that
                     owns skills of UX/UI Design, FrontEnd, BackEnd, Teamwork, Soft skills, and knowledgement in
-                    tecnologies
-                    as HTML, CSS (with Bootstrap, Preprosessor PostCSS with TailwindCSS), JavaScript (With React,
-                    Angular,
-                    NodeJs (With Loopback)).</p>
+                    tecnologies as HTML, CSS (with Bootstrap, Preprosessor PostCSS with TailwindCSS), JavaScript
+                    (Angular, NodeJs (With Loopback)).</p>
 
             </article>
         </section>
         <!--Curriculum-->
-        <article class="curriculum bg-gradient-to-b from-black to-secondary-dark h-[50em] w-screen">
-            <section class=" w-screen flex flex-wrap content-evenly justify-center overflow-hidden">
+        <article id="curriculum" class="bg-gradient-to-b from-black to-secondary-dark h-[50em] w-screen">
+            <section class="w-screen flex flex-wrap content-evenly justify-center overflow-hidden">
                 <div
-                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl rounded-tr-lg">
+                    class="mt-24 font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl rounded-tr-lg animate__animated animate__fadeInDown">
+                    <div class="absolute bg-primary-light w-[6px] h-full">
+                        <div
+                            class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['15/12/2021'] before:w-28">
+                            <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
+                        </div>
+                    </div>
+                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">UX Design</h2>
+                    <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
+                        This course was so interesting to know the basics 
+                    </p>
+                </div>
+                <div
+                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl animate__animated animate__fadeInDown">
                     <div class="absolute bg-primary-light w-[6px] h-full">
                         <div
                             class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['07/07/2021'] before:w-28">
                             <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
                         </div>
                     </div>
-                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">Title of timeline</h2>
+                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">My Portfolio
+                    </h2>
+                    <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
+                        It is my first personal project, in which I put the majority of knowledge that i have about
+                        of UX/UI Design, the CSS domain that I have, and much more...
+                    </p>
+                </div>
+                <div
+                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl rounded-br-lg animate__animated animate__fadeInDown">
+                    <div class="absolute bg-primary-light w-[6px] h-full">
+                        <div
+                            class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['07/07/2021'] before:w-28">
+                            <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
+                        </div>
+                    </div>
+                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">Title of
+                        timeline</h2>
                     <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
                         Lorem ipsum, dolor sit amet
                         consectetur adipisicing elit. Vitae labore porro ipsam quas vel pariatur commodi autem, hic
                         reiciendis eius ex fugit voluptas repudiandae enim quasi nobis quae aliquam ea!
                     </p>
                 </div>
-                <div
-                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl">
-                    <div class="absolute bg-primary-light w-[6px] h-full">
-                        <div
-                            class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['07/07/2021'] before:w-28">
-                            <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
-                        </div>
+
+            </section>
+        </article>
+
+        <article class="bg-secondary-dark h-[50em] w-screen">
+            <section id="projects" class="w-screen flex justify-center">
+
+                <div class="glide" aria-label="Carousel">
+                    <div class="overflow-visible glide__track" data-glide-el="track">
+                        <ul class="glide__slides flex items-center">
+                            <li class="glide__slide">
+                                <div class="slider-image">
+                                    <div class="contain">
+                                        <div class="disk-container">
+                                            <div class="front-face face one">
+                                                <div class="bookmark">
+                                                    <i class="title-project">Evaluation Platform UC</i>
+                                                    <button class="info"><span>More
+                                                            info</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="back-face face flex justify-center items-center bg-blue-900">
+                                                <div class="uc h-48 w-48 bg-no-repeat">
+                                                </div>
+                                                <p
+                                                    class="font-PTsans text-lg text-justify absolute text-white h-full w-full p-6 md:pt-16 bg-black bg-opacity-60">
+                                                    This is a platform seeks having a space to evaluate and qualify
+                                                    differents kinds of request,
+                                                    like job promotions, researching works, etc... <br>
+                                                    It was implemented in "Universidad de Caldas", maded with Angular
+                                                    material, TailwindCSS,
+                                                    Loopback4, Flask, MySQL and MongoDB
+                                                </p>
+                                            </div>
+                                            <div class="left-face face bg-blue-900 filter brightness-50"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="slider-image">
+                                    <div class="contain">
+                                        <div class="disk-container 2">
+                                            <div class="front-face face two">
+                                                <div class="bookmark">
+                                                    <i class="title-project">My Professional Portfolio</i>
+                                                    <button class="info"><span>More
+                                                            info</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="back-face face portfolio flex justify-center items-center bg-secondary-dark">
+                                                <div class="h-48 w-48 bg-no-repeat">
+                                                </div>
+                                                <p
+                                                    class="font-PTsans text-lg text-justify absolute text-white h-full w-full pt-24 bg-black bg-opacity-70">
+                                                    It is my first professional project, in which I put the majority of
+                                                    knowledge that i have about of UX/UI Design, the CSS domain that I
+                                                    have,
+                                                    what i like to do, my focus, and much more...
+                                                </p>
+                                            </div>
+                                            <div class="left-face face bg-secondary-dark filter brightness-50"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="slider-image">
+                                    <div class="contain">
+                                        <div class="disk-container 3">
+                                            <div class="front-face face soon">
+                                                <div class="bookmark">
+                                                    <i class="title-project">Soon</i>
+                                                    <button class="info"><span>More
+                                                            info</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="back-face soon face flex justify-center items-center bg-secondary-dark">
+                                                <div class=" h-48 w-48 bg-no-repeat">
+                                                </div>
+                                                <p
+                                                    class="font-PTsans text-lg text-justify absolute text-white h-full w-full p-6 ">
+                                                    Stay tuned!
+                                                </p>
+                                            </div>
+                                            <div class="left-face face bg-secondary-dark"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">Title of timeline</h2>
-                    <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
-                        Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Vitae labore porro ipsam quas vel pariatur commodi autem, hic
-                        reiciendis eius ex fugit voluptas repudiandae enim quasi nobis quae aliquam ea!
-                    </p>
                 </div>
-                <div
-                    class="font-PTsans relative bg-secondary-dark flex flex-wrap w-11/12 md:w-7/12 shadow-2xl rounded-br-lg">
-                    <div class="absolute bg-primary-light w-[6px] h-full">
-                        <div
-                            class="w-6 h-6 absolute top-6 -left-2 flex rounded-full bg-secondary before:absolute before:left-7 before:-top-3 md:before:-left-20 before:text-xs before:font-PTsans before:text-secondary before:content-['07/07/2021'] before:w-28">
-                            <div class="w-3 h-3 bg-secondary-dark m-auto rounded-full"></div>
-                        </div>
-                    </div>
-                    <h2 class="text-3xl text-primary font-semibold block mx-auto mt-10 sm:mt-5 md:ml-7">Title of timeline</h2>
-                    <p class="text-lg ml-5 mt-2 mb-4 text-secondary-light w-11/12 block justify-self-center">
-                        Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Vitae labore porro ipsam quas vel pariatur commodi autem, hic
-                        reiciendis eius ex fugit voluptas repudiandae enim quasi nobis quae aliquam ea!
-                    </p>
+                <div class="controls">
+                    <div data-glide-dir="<" id="prev"><i class="fa fa-arrow-left"></i></div>
+                    <div data-glide-dir=">" id="next"><i class="fa fa-arrow-right"></i></div>
                 </div>
 
             </section>

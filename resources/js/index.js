@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', event => {
   }); /*Esta función añade un atributo personalizado al html: [data-scroll="in"], y se añade al lado de la clase de css que se
   quiera condicionar, y cada vez que esté en "in", se activará dicha clase*/
 
-  //DINAMIC MENU--------------------------------------------------
+  //-----------------Dinamic Menu---------------------
   const body = document.querySelector("#body");
   const divmenu = document.querySelector("#div-menu");
   const nav = document.querySelector("#navbar");
@@ -37,11 +37,8 @@ document.addEventListener('DOMContentLoaded', event => {
   const ulli = document.querySelector("#ulli");
   const btnburguer = document.querySelector(".menu-btn__burger");
   const menuBtn = document.querySelector('.menu-btn');
-  const artAbout = document.querySelector("#art-about");
-  //const split = document.querySelector("#split");
 
   window.addEventListener("load", function () {
-    divmenu.classList.toggle("p-sticky", divmenu.dataset.scroll == 'out');
     divmenu.classList.toggle("menu", divmenu.dataset.scroll == 'in');
     nav.classList.toggle("nav-v", divmenu.dataset.scroll == 'in');
     nav.classList.toggle("nav-h", divmenu.dataset.scroll == 'out');
@@ -49,6 +46,8 @@ document.addEventListener('DOMContentLoaded', event => {
     btnburguer.classList.toggle("hidden", divmenu.dataset.scroll == 'in');
     ulli.classList.toggle("li-h", divmenu.dataset["scroll"] == 'out'); //another way of dataset
     ulli.classList.toggle("li-v", divmenu.dataset.scroll == 'in');
+    logobtn.classList.add("flex", divmenu.dataset.scroll == 'out');
+    logobtn.classList.remove("hidden", divmenu.dataset.scroll == 'out');
   });
 
   window.addEventListener("scroll", function () {
@@ -63,7 +62,6 @@ document.addEventListener('DOMContentLoaded', event => {
     ulli.classList.toggle("li-h", divmenu.dataset["scroll"] == 'out'); //another way of dataset
     ulli.classList.toggle("hidden", divmenu.getAttribute("data-scroll") == 'out'); //another way
     ulli.classList.remove("flex", divmenu.dataset.scroll == 'out');
-    //artAbout.classList.toggle("fixed", split.getAttribute("data-scroll") == 'in');
   });/*Se relaciona el método toggle con el evento scroll para que funcione, y se accionará cuando el atributo
   data-scroll esté out, (data-atributo = atributo personalizado del html), es más poderoso con css puro*/
 
@@ -84,30 +82,32 @@ document.addEventListener('DOMContentLoaded', event => {
     ulli.classList.toggle("li-h", menuOpen == false);
     nav.classList.toggle("nav-h", menuOpen == true);
   });
-  //-----------------------------------------------------
+
+  //---------------------Parallax------------------------
   var rellax = new Rellax('.rellax');
-  //-----------------------------------------------------
+
+  //-----------------About Me Divition-------------------
   const aboutmePath = {
     values: [
-      { x: -5}, 
-      { x: -20}, 
-      { x: -50}, 
-      { x: -100}, 
-      { x: -700}, 
-      { x: -800}, 
-      { x: -900},
-      
+      { x: -5 },
+      { x: -20 },
+      { x: -50 },
+      { x: -100 },
+      { x: -700 },
+      { x: -800 },
+      { x: -900 },
+
     ]
   };
   const aboutme2Path = {
     values: [
-      { x: 5}, 
-      { x: 20}, 
-      { x: 50}, 
-      { x: 100},
-      { x: 700}, 
-      { x: 800}, 
-      { x: 900},
+      { x: 5 },
+      { x: 20 },
+      { x: 50 },
+      { x: 100 },
+      { x: 700 },
+      { x: 800 },
+      { x: 900 },
     ]
   };
 
@@ -126,13 +126,65 @@ document.addEventListener('DOMContentLoaded', event => {
     })
   );
   const controller = new ScrollMagic.Controller();
-  const scene = new ScrollMagic.Scene({triggerElement: "#art-about", duration: 700,triggerHook: 0, offset: 150})
+  const scene = new ScrollMagic.Scene({ triggerElement: "#art-about", duration: 700, triggerHook: 0, offset: 150 })
     .setPin("#art-about")
     .setTween(tween)
-    .addIndicators() // add indicators (requires plugin)
+    .addIndicators() // add indicators (requires plugin GSAP)
     .addTo(controller);
-  const scene2 = new ScrollMagic.Scene({triggerElement: "#art-about", duration: 700,triggerHook: 0, offset: 150})
+  const scene2 = new ScrollMagic.Scene({ triggerElement: "#art-about", duration: 700, triggerHook: 0, offset: 150 })
     .setTween(tween2)
-    .addIndicators() // add indicators (requires plugin)
+    .addIndicators() // add indicators (requires plugin GSAP)
     .addTo(controller);
+
+  //-------------------Carousel GlideJS--------------------
+
+  let glide = new Glide('.glide', {
+    type: "carousel",
+    startAt: 0,
+    focusAt: 'center',
+    animationTimingFunc: "ease-in-out",
+    gap: 280,
+    perView: 2,
+    breakpoints: {
+      1200: {
+        perView: 2,
+        gap: 200,
+      },
+      1000: {
+        perView: 2,
+        gap: 150,
+      },
+      868: {
+        perView: 2,
+        gap: 80,
+      },
+      768: {
+        perView: 1,
+      }
+    }
+  })
+
+  glide.mount()
+
+  //-------------------- Rotation 3D ----------------------
+
+  let rotated = false;
+  const info = document.querySelectorAll('.info');
+
+  info.forEach(info => info.addEventListener("click", () => {
+    let parent = info.parentElement.parentElement.parentElement;
+    rotated = !rotated;
+    parent.classList.add("rotate", rotated === true)
+  }));
+
+  const face = document.querySelectorAll('.back-face');
+  const slide = document.querySelector('.glide-slides');
+
+  face.forEach(face => face.addEventListener("click", () => {
+    let parent = face.parentElement;
+    console.log(parent);
+    parent.classList.remove("rotate", rotated === true)
+    rotated = !rotated;
+  }));
+
 });

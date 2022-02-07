@@ -21,7 +21,7 @@ module.exports = {
     },
     extend: { // https://tailwindcss.com/docs/customizing-colors#color-palette-reference
       backgroundImage: theme => ({
-        'portada':'url(/resources/assets/video/ezgif.com-gif-maker.gif)',
+        'portada':'url(/resources/assets/img/bg.svg)',
       }),
       colors: {
         teal: colors.teal, 
