@@ -581,6 +581,12 @@ p{
 .mb-4{
 	margin-bottom: 1rem;
 }
+.ml-10{
+	margin-left: 2.5rem;
+}
+.ml-7{
+	margin-left: 1.75rem;
+}
 .block{
 	display: block;
 }
@@ -711,9 +717,6 @@ p{
 .rounded-tr-lg{
 	border-top-right-radius: 0.5rem;
 }
-.rounded-br-lg{
-	border-bottom-right-radius: 0.5rem;
-}
 .bg-primary{
 	background-color: var(--primary-default);
 }
@@ -768,6 +771,9 @@ p{
 .pt-24{
 	padding-top: 6rem;
 }
+.text-center{
+	text-align: center;
+}
 .text-justify{
 	text-align: justify;
 }
@@ -821,6 +827,9 @@ p{
 }
 .text-secondary-light{
 	color: var(--secondary-light);
+}
+.text-secondary{
+	color: var(--secondary-default);
 }
 .opacity-60{
 	opacity: 0.6;
@@ -889,8 +898,8 @@ p{
 .before\:content-\[\'15\/12\/2021\'\]::before{
 	content: '15 / 12 / 2021';
 }
-.before\:content-\[\'07\/07\/2021\'\]::before{
-	content: '07 / 07 / 2021';
+.before\:content-\[\'26\/01\/2019\'\]::before{
+	content: '26 / 01 / 2019';
 }
 
   @media (prefers-reduced-motion: reduce) {
@@ -1091,7 +1100,7 @@ body::-webkit-scrollbar-thumb:active{
 }
 
 html[data-scroll-dir-y="-1"] .p-sticky{
-	--tw-bg-opacity: 0.7;
+	--tw-bg-opacity: 0.5;
 }
 
 html[data-scroll-dir-y="1"] .p-sticky{
@@ -1635,6 +1644,9 @@ svg {
 	.sm\:w-3\/5{
 		width: 60%;
 	}
+	.sm\:text-center{
+		text-align: center;
+	}
 }
 
 @media (min-width: 768px){
@@ -1657,6 +1669,12 @@ svg {
 	.md\:pt-16{
 		padding-top: 4rem;
 	}
+	.md\:text-left{
+		text-align: left;
+	}
+	.md\:text-center{
+		text-align: center;
+	}
 	.md\:text-6xl{
 		font-size: 3.75rem;
 		line-height: 1;
@@ -1672,6 +1690,9 @@ svg {
 	}
 	.lg\:mr-20{
 		margin-right: 5rem;
+	}
+	.lg\:text-left{
+		text-align: left;
 	}
 	.lg\:text-7xl{
 		font-size: 4.5rem;

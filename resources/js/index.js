@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', event => {
   const ulli = document.querySelector("#ulli");
   const btnburguer = document.querySelector(".menu-btn__burger");
   const menuBtn = document.querySelector('.menu-btn');
+  const li_a = document.querySelectorAll('.li-a');
 
   window.addEventListener("load", function () {
     divmenu.classList.toggle("menu", divmenu.dataset.scroll == 'in');
@@ -82,6 +83,25 @@ document.addEventListener('DOMContentLoaded', event => {
     ulli.classList.toggle("li-h", menuOpen == false);
     nav.classList.toggle("nav-h", menuOpen == true);
   });
+
+  li_a.forEach(li_a => li_a.addEventListener("click", () => {
+    if (menuOpen) {
+      menuOpen = !menuOpen;
+      menuBtn.classList.toggle("open");
+      logobtn.classList.toggle("h-screen");
+      logobtn.classList.toggle("h-full");
+      body.classList.toggle("overflow-hidden");
+      nav.classList.toggle("hidden", divmenu.dataset.scroll == 'out');
+      divmenu.classList.toggle("open-p-sticky", menuOpen == true);
+      logobtn.classList.toggle("items-center", menuOpen == false);
+      logobtn.classList.toggle("items-start", menuOpen == true);
+      logo.classList.toggle("hidden", menuOpen == true);
+      imglogo.classList.toggle("hidden", menuOpen == false);
+      ulli.classList.toggle("li-absolute", menuOpen == true);
+      ulli.classList.toggle("li-h", menuOpen == false);
+      nav.classList.toggle("nav-h", menuOpen == true);
+    }
+  }));
 
   //---------------------Parallax------------------------
   var rellax = new Rellax('.rellax');
@@ -178,7 +198,6 @@ document.addEventListener('DOMContentLoaded', event => {
   }));
 
   const face = document.querySelectorAll('.back-face');
-  const slide = document.querySelector('.glide-slides');
 
   face.forEach(face => face.addEventListener("click", () => {
     let parent = face.parentElement;

@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 html[data-scroll-dir-y="-1"] .p-sticky {
-  @apply bg-opacity-70;
+  @apply bg-opacity-50;
 }
 
 html[data-scroll-dir-y="1"] .p-sticky {
