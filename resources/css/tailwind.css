@@ -581,12 +581,6 @@ p{
 .mb-4{
 	margin-bottom: 1rem;
 }
-.ml-10{
-	margin-left: 2.5rem;
-}
-.ml-7{
-	margin-left: 1.75rem;
-}
 .block{
 	display: block;
 }
@@ -1644,9 +1638,6 @@ svg {
 	.sm\:w-3\/5{
 		width: 60%;
 	}
-	.sm\:text-center{
-		text-align: center;
-	}
 }
 
 @media (min-width: 768px){
@@ -1668,12 +1659,6 @@ svg {
 	}
 	.md\:pt-16{
 		padding-top: 4rem;
-	}
-	.md\:text-left{
-		text-align: left;
-	}
-	.md\:text-center{
-		text-align: center;
 	}
 	.md\:text-6xl{
 		font-size: 3.75rem;

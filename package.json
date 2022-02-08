@@ -22,7 +22,6 @@
     "@glidejs/glide": "^3.5.2",
     "@splidejs/splide": "^3.6.12",
     "animate.css": "^4.1.1",
-    "rellax": "^1.12.1",
-    "win-node-env": "^0.4.0"
+    "rellax": "^1.12.1"
   }
 }

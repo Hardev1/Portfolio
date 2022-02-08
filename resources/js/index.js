@@ -1,5 +1,6 @@
 'use strict'
 import ScrollOut from '/resources/js/scroll-out.js';
+import Glide from '/resources/js/glide.min.js';
 /*Al usar funciones externas del index.js, se importa cada una de esta manera:
 import { ScrollOut } from '/resources/js/scroll-out.js';, o de lo contrario, 
 se importa como comúnmente se hace, y en la clase exportada, colocar al final:
